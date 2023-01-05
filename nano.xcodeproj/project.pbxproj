@@ -13,6 +13,8 @@
 		23C5E6C92966D0A100F6C592 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 23C5E6C82966D0A100F6C592 /* Preview Assets.xcassets */; };
 		23C5E6CB2966D0A100F6C592 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23C5E6CA2966D0A100F6C592 /* Persistence.swift */; };
 		23C5E6CE2966D0A100F6C592 /* nano.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 23C5E6CC2966D0A100F6C592 /* nano.xcdatamodeld */; };
+		23C5E6D52966D0CB00F6C592 /* Splash.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23C5E6D42966D0CB00F6C592 /* Splash.swift */; };
+		23C5E6D72966D0E300F6C592 /* Camera.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23C5E6D62966D0E300F6C592 /* Camera.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +25,8 @@
 		23C5E6C82966D0A100F6C592 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		23C5E6CA2966D0A100F6C592 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		23C5E6CD2966D0A100F6C592 /* nano.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = nano.xcdatamodel; sourceTree = "<group>"; };
+		23C5E6D42966D0CB00F6C592 /* Splash.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Splash.swift; sourceTree = "<group>"; };
+		23C5E6D62966D0E300F6C592 /* Camera.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Camera.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +61,8 @@
 			children = (
 				23C5E6C12966D0A000F6C592 /* nanoApp.swift */,
 				23C5E6C32966D0A000F6C592 /* ContentView.swift */,
+				23C5E6D42966D0CB00F6C592 /* Splash.swift */,
+				23C5E6D62966D0E300F6C592 /* Camera.swift */,
 				23C5E6C52966D0A100F6C592 /* Assets.xcassets */,
 				23C5E6CA2966D0A100F6C592 /* Persistence.swift */,
 				23C5E6CC2966D0A100F6C592 /* nano.xcdatamodeld */,
@@ -145,8 +151,10 @@
 			files = (
 				23C5E6CB2966D0A100F6C592 /* Persistence.swift in Sources */,
 				23C5E6CE2966D0A100F6C592 /* nano.xcdatamodeld in Sources */,
+				23C5E6D72966D0E300F6C592 /* Camera.swift in Sources */,
 				23C5E6C42966D0A000F6C592 /* ContentView.swift in Sources */,
 				23C5E6C22966D0A000F6C592 /* nanoApp.swift in Sources */,
+				23C5E6D52966D0CB00F6C592 /* Splash.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -6,7 +6,7 @@
 //
 
 import SwiftUI
-
+//AAAA
 struct MainPage: View {
     @State var changeProfileImage = false
     @State var openCameraRoll = false

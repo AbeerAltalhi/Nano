@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		232B33022968372C00904F51 /* MainPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 232B33012968372C00904F51 /* MainPage.swift */; };
+		232B33042968757E00904F51 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 232B33032968757E00904F51 /* ImagePicker.swift */; };
 		23C5E6C22966D0A000F6C592 /* nanoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23C5E6C12966D0A000F6C592 /* nanoApp.swift */; };
 		23C5E6C42966D0A000F6C592 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23C5E6C32966D0A000F6C592 /* ContentView.swift */; };
 		23C5E6C62966D0A100F6C592 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 23C5E6C52966D0A100F6C592 /* Assets.xcassets */; };
@@ -18,6 +20,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		232B33012968372C00904F51 /* MainPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPage.swift; sourceTree = "<group>"; };
+		232B33032968757E00904F51 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 		23C5E6BE2966D0A000F6C592 /* nano.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = nano.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		23C5E6C12966D0A000F6C592 /* nanoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = nanoApp.swift; sourceTree = "<group>"; };
 		23C5E6C32966D0A000F6C592 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -61,6 +65,8 @@
 			children = (
 				23C5E6C12966D0A000F6C592 /* nanoApp.swift */,
 				23C5E6C32966D0A000F6C592 /* ContentView.swift */,
+				232B33012968372C00904F51 /* MainPage.swift */,
+				232B33032968757E00904F51 /* ImagePicker.swift */,
 				23C5E6D42966D0CB00F6C592 /* Splash.swift */,
 				23C5E6D62966D0E300F6C592 /* Camera.swift */,
 				23C5E6C52966D0A100F6C592 /* Assets.xcassets */,
@@ -154,6 +160,8 @@
 				23C5E6D72966D0E300F6C592 /* Camera.swift in Sources */,
 				23C5E6C42966D0A000F6C592 /* ContentView.swift in Sources */,
 				23C5E6C22966D0A000F6C592 /* nanoApp.swift in Sources */,
+				232B33042968757E00904F51 /* ImagePicker.swift in Sources */,
+				232B33022968372C00904F51 /* MainPage.swift in Sources */,
 				23C5E6D52966D0CB00F6C592 /* Splash.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

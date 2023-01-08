@@ -10,7 +10,6 @@
 		232B33022968372C00904F51 /* MainPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 232B33012968372C00904F51 /* MainPage.swift */; };
 		232B33042968757E00904F51 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 232B33032968757E00904F51 /* ImagePicker.swift */; };
 		23C5E6C22966D0A000F6C592 /* nanoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23C5E6C12966D0A000F6C592 /* nanoApp.swift */; };
-		23C5E6C42966D0A000F6C592 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23C5E6C32966D0A000F6C592 /* ContentView.swift */; };
 		23C5E6C62966D0A100F6C592 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 23C5E6C52966D0A100F6C592 /* Assets.xcassets */; };
 		23C5E6C92966D0A100F6C592 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 23C5E6C82966D0A100F6C592 /* Preview Assets.xcassets */; };
 		23C5E6CB2966D0A100F6C592 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23C5E6CA2966D0A100F6C592 /* Persistence.swift */; };
@@ -24,7 +23,6 @@
 		232B33032968757E00904F51 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 		23C5E6BE2966D0A000F6C592 /* nano.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = nano.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		23C5E6C12966D0A000F6C592 /* nanoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = nanoApp.swift; sourceTree = "<group>"; };
-		23C5E6C32966D0A000F6C592 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		23C5E6C52966D0A100F6C592 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		23C5E6C82966D0A100F6C592 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		23C5E6CA2966D0A100F6C592 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
@@ -64,10 +62,9 @@
 			isa = PBXGroup;
 			children = (
 				23C5E6C12966D0A000F6C592 /* nanoApp.swift */,
-				23C5E6C32966D0A000F6C592 /* ContentView.swift */,
+				23C5E6D42966D0CB00F6C592 /* Splash.swift */,
 				232B33012968372C00904F51 /* MainPage.swift */,
 				232B33032968757E00904F51 /* ImagePicker.swift */,
-				23C5E6D42966D0CB00F6C592 /* Splash.swift */,
 				23C5E6D62966D0E300F6C592 /* Camera.swift */,
 				23C5E6C52966D0A100F6C592 /* Assets.xcassets */,
 				23C5E6CA2966D0A100F6C592 /* Persistence.swift */,
@@ -158,7 +155,6 @@
 				23C5E6CB2966D0A100F6C592 /* Persistence.swift in Sources */,
 				23C5E6CE2966D0A100F6C592 /* nano.xcdatamodeld in Sources */,
 				23C5E6D72966D0E300F6C592 /* Camera.swift in Sources */,
-				23C5E6C42966D0A000F6C592 /* ContentView.swift in Sources */,
 				23C5E6C22966D0A000F6C592 /* nanoApp.swift in Sources */,
 				232B33042968757E00904F51 /* ImagePicker.swift in Sources */,
 				232B33022968372C00904F51 /* MainPage.swift in Sources */,
@@ -293,6 +289,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"nano/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "هل تسمح للتطبيق للوصول الى الكاميرا؟";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -321,6 +318,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"nano/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "هل تسمح للتطبيق للوصول الى الكاميرا؟";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

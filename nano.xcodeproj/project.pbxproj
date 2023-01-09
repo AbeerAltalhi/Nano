@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		232B33022968372C00904F51 /* MainPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 232B33012968372C00904F51 /* MainPage.swift */; };
 		232B33042968757E00904F51 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 232B33032968757E00904F51 /* ImagePicker.swift */; };
+		23968141296AB4C600318D02 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 23968143296AB4C600318D02 /* Localizable.strings */; };
 		23C5E6C22966D0A000F6C592 /* nanoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23C5E6C12966D0A000F6C592 /* nanoApp.swift */; };
 		23C5E6C62966D0A100F6C592 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 23C5E6C52966D0A100F6C592 /* Assets.xcassets */; };
 		23C5E6C92966D0A100F6C592 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 23C5E6C82966D0A100F6C592 /* Preview Assets.xcassets */; };
@@ -21,6 +22,8 @@
 /* Begin PBXFileReference section */
 		232B33012968372C00904F51 /* MainPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPage.swift; sourceTree = "<group>"; };
 		232B33032968757E00904F51 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		235BC268296BF91B00945251 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Localizable.strings; sourceTree = "<group>"; };
+		23968142296AB4C600318D02 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		23C5E6BE2966D0A000F6C592 /* nano.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = nano.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		23C5E6C12966D0A000F6C592 /* nanoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = nanoApp.swift; sourceTree = "<group>"; };
 		23C5E6C52966D0A100F6C592 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -42,6 +45,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2396813D296AB39000318D02 /* Utilites */ = {
+			isa = PBXGroup;
+			children = (
+				2396813E296AB3DF00318D02 /* Localization */,
+			);
+			path = Utilites;
+			sourceTree = "<group>";
+		};
+		2396813E296AB3DF00318D02 /* Localization */ = {
+			isa = PBXGroup;
+			children = (
+				23968143296AB4C600318D02 /* Localizable.strings */,
+			);
+			path = Localization;
+			sourceTree = "<group>";
+		};
 		23C5E6B52966D0A000F6C592 = {
 			isa = PBXGroup;
 			children = (
@@ -62,6 +81,7 @@
 			isa = PBXGroup;
 			children = (
 				23C5E6C12966D0A000F6C592 /* nanoApp.swift */,
+				2396813D296AB39000318D02 /* Utilites */,
 				23C5E6D42966D0CB00F6C592 /* Splash.swift */,
 				232B33012968372C00904F51 /* MainPage.swift */,
 				232B33032968757E00904F51 /* ImagePicker.swift */,
@@ -124,6 +144,7 @@
 			knownRegions = (
 				en,
 				Base,
+				ar,
 			);
 			mainGroup = 23C5E6B52966D0A000F6C592;
 			productRefGroup = 23C5E6BF2966D0A000F6C592 /* Products */;
@@ -141,6 +162,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				23C5E6C92966D0A100F6C592 /* Preview Assets.xcassets in Resources */,
+				23968141296AB4C600318D02 /* Localizable.strings in Resources */,
 				23C5E6C62966D0A100F6C592 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -163,6 +185,18 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		23968143296AB4C600318D02 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				23968142296AB4C600318D02 /* en */,
+				235BC268296BF91B00945251 /* ar */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		23C5E6CF2966D0A100F6C592 /* Debug */ = {

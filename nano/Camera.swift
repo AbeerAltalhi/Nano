@@ -8,8 +8,31 @@
 import SwiftUI
 
 struct Camera: View {
+    @State var Email: String = ""
+    @State var yourCondition: Int = 2
+    var colorToShow: Color {
+            switch yourCondition {
+                case 1:
+                    return .red
+                case 2:
+                    return .green
+                case 3:
+                    return .blue
+                case 4:
+                    return Color(UIColor(red: 0.5, green: 0.2, blue: 0.8, alpha: 0.5))
+                default:
+                    return .clear
+            }
+        }
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        Button(action: { print("hello")}, label: {
+            Text("Button")
+            TextField("Enter Your Email", text: $Email)
+          })
+        .foregroundColor(colorToShow)
+
+        
     }
 }
 

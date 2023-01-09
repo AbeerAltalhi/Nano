@@ -11,34 +11,58 @@ struct MainPage: View {
     @State var changeProfileImage = false
     @State var openCameraRoll = false
     @State var imageSelected = UIImage()
+  //  @State private var isPresentedFullScreenCover = false
     var body: some View {
-        
-        VStack {
-            Text("أُنقر هنا ")
-            Button(action:{
-                changeProfileImage = true
-                openCameraRoll = true
-            }, label: {
-                if changeProfileImage{
-                    Image(uiImage: imageSelected)
-                        .resizable()
-                        .frame(width: 120, height: 120)
-                }else{
-                    
-                    Image(systemName: "camera")
-                        .resizable()
-                        .frame(width: 60.0, height: 50.0)
-                      //  .padding()
+        NavigationView {
+            
+            VStack {
+                NavigationLink(destination: Home()) {
+                    Text("أُنقر هنا")
+                        .font(.system(size: 28))
+                        .foregroundColor(Color("1"))
+                        .padding(.vertical, 10.0)
+                }.navigationBarBackButtonHidden(true)
+                
+                //            Button(action:{
+                //                changeProfileImage = true
+                //                openCameraRoll = true
+                //            }, label: {
+                //                if changeProfileImage{
+                //                    Image(uiImage: imageSelected)
+                //                        .resizable()
+                //                        .frame(width: 120, height: 120)
+                //                }else{
+                //
+                //                    Image(systemName: "camera")
+                //                        .resizable()
+                //                        .frame(width: 100.0, height: 90.0)
+                //                        .foregroundColor(Color("2"))
+                //                      //  .padding()
+                //                }
+                //            })
+                Image(systemName: "camera")
+                    .resizable()
+                    .frame(width: 100.0, height: 90.0)
+                    .foregroundColor(Color("2"))
+                //  .padding()
+                
+                VStack{
+                    Text("إرشادات : ")
+                        .foregroundColor(Color("1"))
+                        .font(.system(size: 20))
+                    Text("- يجب إلتقاط الصوره بإضاءّ جيدة. ")
+                        .foregroundColor(Color("1"))
+                        .font(.system(size: 20))
+                    Text("- التأكد من وضوح الصورة عند إلتقاطها.")
+                        .foregroundColor(Color("1"))
+                        .font(.system(size: 20))
                 }
-            })
-            VStack{
-                Text("إرشادات : ")
-                Text("- يجب إلتقاط الصوره بإضاءّ جيدة. ")
-                Text("- التأكد من وضوح الصورة عند إلتقاطها.")
+                .padding(.top, 50.0)
             }
-        }.sheet(isPresented: $openCameraRoll){
-            ImagePicker(selectedImage: $imageSelected,
-             sourceType: .camera)
+            //        .sheet(isPresented: $openCameraRoll){
+            //            ImagePicker(selectedImage: $imageSelected,
+            //             sourceType: .camera)
+            //        }
         }
     }
 }

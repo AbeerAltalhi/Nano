@@ -11,7 +11,7 @@ struct Home: View {
     @State var showPicker: Bool = false
     @State var showPickerFirstView: Bool = false
 
-
+//
     
     
     @State var selectedColor: Color = .white

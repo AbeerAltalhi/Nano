@@ -25,7 +25,7 @@
 		232B33012968372C00904F51 /* MainPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPage.swift; sourceTree = "<group>"; };
 		232B33032968757E00904F51 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 		235BC268296BF91B00945251 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Localizable.strings; sourceTree = "<group>"; };
-		23968142296AB4C600318D02 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		23BCBECE296C6A7900F7AAC8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		23C5E6BE2966D0A000F6C592 /* nano.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = nano.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		23C5E6C12966D0A000F6C592 /* nanoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = nanoApp.swift; sourceTree = "<group>"; };
 		23C5E6C52966D0A100F6C592 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -198,8 +198,8 @@
 		23968143296AB4C600318D02 /* Localizable.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				23968142296AB4C600318D02 /* en */,
 				235BC268296BF91B00945251 /* ar */,
+				23BCBECE296C6A7900F7AAC8 /* en */,
 			);
 			name = Localizable.strings;
 			sourceTree = "<group>";

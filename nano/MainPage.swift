@@ -16,9 +16,9 @@ struct MainPage: View {
         NavigationView {
             
             VStack {
-                NavigationLink(destination: Home()) {
-                    Text("أُنقر هنا")
-                        .font(.system(size: 28))
+                NavigationLink(destination: Splash()) {
+                    Text(LocalizedStringKey("H1"))
+                        .font(.system(size: 25))
                         .foregroundColor(Color("1"))
                         .padding(.vertical, 10.0)
                 }.navigationBarBackButtonHidden(true)
@@ -42,20 +42,21 @@ struct MainPage: View {
                 //            })
                 Image(systemName: "camera")
                     .resizable()
-                    .frame(width: 100.0, height: 90.0)
+                    .frame(width: 100.0, height: 80.0)
                     .foregroundColor(Color("2"))
                 //  .padding()
                 
                 VStack{
-                    Text("إرشادات : ")
+                    Text(LocalizedStringKey("H2"))
                         .foregroundColor(Color("1"))
                         .font(.system(size: 20))
-                    Text("- يجب إلتقاط الصوره بإضاءّ جيدة. ")
+                    Text(LocalizedStringKey("H3"))
                         .foregroundColor(Color("1"))
                         .font(.system(size: 20))
-                    Text("- التأكد من وضوح الصورة عند إلتقاطها.")
+                    Text(LocalizedStringKey("H4"))
                         .foregroundColor(Color("1"))
                         .font(.system(size: 20))
+                        .multilineTextAlignment(.center)
                 }
                 .padding(.top, 50.0)
             }

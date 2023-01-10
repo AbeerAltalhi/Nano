@@ -13,7 +13,7 @@ struct nanoApp: App {
 
     var body: some Scene {
         WindowGroup {
-            MainPage()
+           Splash()
                 .environment(\.managedObjectContext, persistenceController.container.viewContext)
         }
     }

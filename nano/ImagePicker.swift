@@ -21,7 +21,6 @@ struct ImagePicker: UIViewControllerRepresentable {
         let imagePicker = UIImagePickerController()
         imagePicker.allowsEditing = false
         imagePicker.sourceType = sourceType
-      //  imagePicker.delegate = context.coordinator
         
         return imagePicker
     }
@@ -30,21 +29,5 @@ struct ImagePicker: UIViewControllerRepresentable {
         
     }
     
-//    final class Coordinator: NSObject, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
-//        var parent: ImagePicker
-//        init( parent: ImagePicker){
-//            self.parent = parent
-//        }
-//        func imagePickerControllerDidCancel(_ picker: UIImagePickerController, didFinishPickerMediaWithInfo: [UIImagePickerController.InfoKey : Any]) {
-//
-//            if let image = info[UIImagePickerController.InfoKey.originalImage] as? UIImage {
-//                parent.selectedImage = image
-//            }
-//            parent.presentationMode.wrappedValue.dismiss()
-//        }
-//    }
-//    func makeCoordinator() -> Coordinator {
-//        Coordinator(parent: self)
-//    }
 }
 

@@ -10,6 +10,7 @@
 		232B33022968372C00904F51 /* MainPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 232B33012968372C00904F51 /* MainPage.swift */; };
 		232B33042968757E00904F51 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 232B33032968757E00904F51 /* ImagePicker.swift */; };
 		23968141296AB4C600318D02 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 23968143296AB4C600318D02 /* Localizable.strings */; };
+		239D4241296DD53A00AB47A0 /* MyColorPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 239D4240296DD53A00AB47A0 /* MyColorPicker.swift */; };
 		23C5E6C22966D0A000F6C592 /* nanoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23C5E6C12966D0A000F6C592 /* nanoApp.swift */; };
 		23C5E6C62966D0A100F6C592 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 23C5E6C52966D0A100F6C592 /* Assets.xcassets */; };
 		23C5E6C92966D0A100F6C592 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 23C5E6C82966D0A100F6C592 /* Preview Assets.xcassets */; };
@@ -25,6 +26,7 @@
 		232B33012968372C00904F51 /* MainPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPage.swift; sourceTree = "<group>"; };
 		232B33032968757E00904F51 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 		235BC268296BF91B00945251 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Localizable.strings; sourceTree = "<group>"; };
+		239D4240296DD53A00AB47A0 /* MyColorPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyColorPicker.swift; sourceTree = "<group>"; };
 		23BCBECE296C6A7900F7AAC8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		23C5E6BE2966D0A000F6C592 /* nano.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = nano.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		23C5E6C12966D0A000F6C592 /* nanoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = nanoApp.swift; sourceTree = "<group>"; };
@@ -90,6 +92,7 @@
 				232B33012968372C00904F51 /* MainPage.swift */,
 				9721DBAB296D456A008DE5F4 /* Home.swift */,
 				9721DBAD296D45B3008DE5F4 /* CustomColorPcker.swift */,
+				239D4240296DD53A00AB47A0 /* MyColorPicker.swift */,
 				232B33032968757E00904F51 /* ImagePicker.swift */,
 				23C5E6D62966D0E300F6C592 /* Camera.swift */,
 				23C5E6C52966D0A100F6C592 /* Assets.xcassets */,
@@ -189,6 +192,7 @@
 				9721DBAC296D456A008DE5F4 /* Home.swift in Sources */,
 				9721DBAE296D45B3008DE5F4 /* CustomColorPcker.swift in Sources */,
 				23C5E6D52966D0CB00F6C592 /* Splash.swift in Sources */,
+				239D4241296DD53A00AB47A0 /* MyColorPicker.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -329,7 +333,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"nano/Preview Content\"";
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 684Z82SSZ7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSCameraUsageDescription = "هل تسمح للتطبيق للوصول الى الكاميرا؟";
@@ -359,7 +363,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"nano/Preview Content\"";
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 684Z82SSZ7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSCameraUsageDescription = "هل تسمح للتطبيق للوصول الى الكاميرا؟";

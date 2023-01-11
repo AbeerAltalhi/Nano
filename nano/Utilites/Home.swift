@@ -10,6 +10,7 @@ import SwiftUI
 struct Home: View {
     @State var showPicker: Bool = false
     @State var showPickerFirstView: Bool = false
+    @State private var showingPopover = false
 
 
     
@@ -27,8 +28,8 @@ struct Home: View {
                 
                 showPickerFirstView.toggle()
             } label: {
-                Text("Show Image Color Picker")
-                    
+                Text(LocalizedStringKey("H5"))
+               //نغير الجمله وكمان ااضيفها لملف اللغات
             }
         }
         .imageColorPicker(showPicker: $showPicker, showPickerFirstView: $showPickerFirstView, color: $selectedColor)

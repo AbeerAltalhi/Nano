@@ -19,6 +19,7 @@
 		23C5E6D72966D0E300F6C592 /* Camera.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23C5E6D62966D0E300F6C592 /* Camera.swift */; };
 		9721DBAC296D456A008DE5F4 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9721DBAB296D456A008DE5F4 /* Home.swift */; };
 		9721DBAE296D45B3008DE5F4 /* CustomColorPcker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9721DBAD296D45B3008DE5F4 /* CustomColorPcker.swift */; };
+		97DF0365296D8A2300871145 /* color palette.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97DF0364296D8A2300871145 /* color palette.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		23C5E6D62966D0E300F6C592 /* Camera.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Camera.swift; sourceTree = "<group>"; };
 		9721DBAB296D456A008DE5F4 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Home.swift; path = Utilites/Home.swift; sourceTree = "<group>"; };
 		9721DBAD296D45B3008DE5F4 /* CustomColorPcker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomColorPcker.swift; sourceTree = "<group>"; };
+		97DF0364296D8A2300871145 /* color palette.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "color palette.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +91,7 @@
 				23C5E6D42966D0CB00F6C592 /* Splash.swift */,
 				232B33012968372C00904F51 /* MainPage.swift */,
 				9721DBAB296D456A008DE5F4 /* Home.swift */,
+				97DF0364296D8A2300871145 /* color palette.swift */,
 				9721DBAD296D45B3008DE5F4 /* CustomColorPcker.swift */,
 				232B33032968757E00904F51 /* ImagePicker.swift */,
 				23C5E6D62966D0E300F6C592 /* Camera.swift */,
@@ -182,6 +185,7 @@
 			files = (
 				23C5E6CB2966D0A100F6C592 /* Persistence.swift in Sources */,
 				23C5E6CE2966D0A100F6C592 /* nano.xcdatamodeld in Sources */,
+				97DF0365296D8A2300871145 /* color palette.swift in Sources */,
 				23C5E6D72966D0E300F6C592 /* Camera.swift in Sources */,
 				23C5E6C22966D0A000F6C592 /* nanoApp.swift in Sources */,
 				232B33042968757E00904F51 /* ImagePicker.swift in Sources */,
@@ -329,7 +333,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"nano/Preview Content\"";
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = P9R8W4WG3C;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSCameraUsageDescription = "هل تسمح للتطبيق للوصول الى الكاميرا؟";
@@ -359,7 +363,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"nano/Preview Content\"";
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = P9R8W4WG3C;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSCameraUsageDescription = "هل تسمح للتطبيق للوصول الى الكاميرا؟";

@@ -28,7 +28,7 @@ struct Home: View {
                 showPickerFirstView.toggle()
             } label: {
                 Text("Show Image Color Picker")
-                    
+            
             }
         }
         .imageColorPicker(showPicker: $showPicker, showPickerFirstView: $showPickerFirstView, color: $selectedColor)

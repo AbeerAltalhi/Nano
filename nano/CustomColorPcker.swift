@@ -22,10 +22,11 @@ extension View{
         
     }
 
+
+
  
 struct Helper: View{
     
-
     @Binding var showPicker: Bool
     
     @Binding var showPickerFirstView: Bool
@@ -35,6 +36,30 @@ struct Helper: View{
     @State var showImagePicker: Bool = false
     @State var imageData: Data = .init(count: 0)
     
+    // Arry of Colors
+    
+//    let colors: [String: Color] = ["4": .red, "5": .yellow, "6": .pink]
+//    let Colorfull: [String: Color]= []
+    
+    
+    func morecolor(_ morecolor:Color)-> Color{
+        var Recolor: Color = .white
+       // var Recolor : Color
+//        let SEColor = color
+//        print(morecolor)
+        switch (morecolor){
+        case (.white):
+           
+            Recolor = .red
+               
+        case (.green):
+            Recolor = .red
+        default:
+         print("recolor")
+        }
+        
+        return (Recolor)
+    }
     
     var body: some View{
         
@@ -81,6 +106,24 @@ struct Helper: View{
                         .offset(x: 15 , y : 15)
                 }
                 
+                
+            
+                ZStack(alignment: .top){
+                    
+                    Rectangle()
+                        .fill(morecolor(color))
+                        .cornerRadius(15)
+                        .frame(width: 150,height: 90)
+                        .clipped()
+                        .offset(x: 15 , y : 20)
+                }
+
+
+                
+//
+                
+
+                
             }
             .ignoresSafeArea(.container, edges: .bottom)
             .navigationTitle("Image Colro Picker")
@@ -88,6 +131,8 @@ struct Helper: View{
             .toolbar{
                 Button("Close"){
                    showPicker .toggle()
+                    
+                
                 }
             }
             .sheet(isPresented: $showPicker ){
@@ -95,6 +140,8 @@ struct Helper: View{
             } content: {
                 ImagePicker(showPicker: $showPicker, imageData: $imageData)
             }
+            
+   
         }
         
     }

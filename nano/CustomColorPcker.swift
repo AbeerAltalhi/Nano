@@ -16,26 +16,27 @@ extension View{
             } content: {
                 Helper(showPicker: showPicker, showPickerFirstView: showPickerFirstView, color: color)
                 
-                }
-                
             }
         
     }
+    
+}
 
- 
+
 struct Helper: View{
     
-
+    
     @Binding var showPicker: Bool
     
     @Binding var showPickerFirstView: Bool
-
+    
     @Binding var color: Color
     
     @State var showImagePicker: Bool = false
     @State var imageData: Data = .init(count: 0)
-    
-    
+    @State private var showingPopover = false
+    @State private var selectedColor: Color = .blue
+    @State private var isPresentedFullScreenCover = false
     var body: some View{
         
         NavigationView{
@@ -48,7 +49,7 @@ struct Helper: View{
                     VStack(spacing: 12) {
                         
                         if let image = UIImage(data: imageData){
-                          
+                            
                             Image(uiImage: image)
                                 .resizable()
                                 .aspectRatio(contentMode: .fit)
@@ -65,12 +66,12 @@ struct Helper: View{
                     .contentShape(Rectangle())
                     .onTapGesture {
                         
-                       // showImagePicker.toggle()
+                        // showImagePicker.toggle()
                     }
                 }
                 ZStack(alignment: .top){
                     
-                    Rectangle()
+                    Circle()
                         .fill(color)
                         .cornerRadius(15)
                         .frame(width: 150,height: 90)
@@ -86,10 +87,43 @@ struct Helper: View{
             .navigationTitle("Image Colro Picker")
             .navigationBarTitleDisplayMode(.inline)
             .toolbar{
-                Button("Close"){
-                   showPicker .toggle()
+                ToolbarItem(placement: .navigationBarLeading) {
+                    
+                    Button("H6", action: {
+                        isPresentedFullScreenCover = true
+                    })
+                    .fullScreenCover(isPresented: $isPresentedFullScreenCover) {
+                        MainPage()
+                    }
+                    //                    Button("H6"){
+                    //                        showPicker .toggle()
+                    //                    }
+                }
+                ToolbarItem(placement: .navigationBarTrailing) {
+                    Button("H7"){
+                        showingPopover = true
+                    } .popover(isPresented: $showingPopover) {
+                        Spacer()
+                        Text("H8")
+                            .font(.title)
+                        VStack {
+                            MyColorPicker(selectedColor: $selectedColor)
+                            Spacer()
+                            
+                            Circle()
+                                .frame(width: 300, height: 300)
+                                .cornerRadius(20)
+                                .foregroundColor(selectedColor)
+                            Text("\(selectedColor.description)")
+                                .font(.system(size: 40, design: .rounded))
+                            
+                            Spacer()
+                        }
+                        //.padding()
+                    }
                 }
             }
+            
             .sheet(isPresented: $showPicker ){
                 
             } content: {
@@ -142,11 +176,11 @@ struct Helper: View{
                         }
                         parent.imageData = image.jpegData(compressionQuality: 1) ?? .init(count:0)
                         
-                       parent.showPicker.toggle()
+                        parent.showPicker.toggle()
                     }
                 }
                 else{
-                  //  parent.showPicker.toggle()
+                    //  parent.showPicker.toggle()
                     
                 }
             }

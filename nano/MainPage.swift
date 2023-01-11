@@ -8,20 +8,36 @@
 import SwiftUI
 //AAA
 struct MainPage: View {
-    @State var changeProfileImage = false
-    @State var openCameraRoll = false
-    @State var imageSelected = UIImage()
-  //  @State private var isPresentedFullScreenCover = false
+    @State var showPicker: Bool = false
+    @State var showPickerFirstView: Bool = false
+    
+    // @State var changeProfileImage = false
+    // @State var openCameraRoll = false
+    // @State var imageSelected = UIImage()
+    //  @State private var isPresentedFullScreenCover = false
     var body: some View {
         NavigationView {
             
             VStack {
-                NavigationLink(destination: Splash()) {
+                NavigationLink(destination: Home()) {
                     Text(LocalizedStringKey("H1"))
-                        .font(.system(size: 25))
+                        .font(.largeTitle)
                         .foregroundColor(Color("1"))
                         .padding(.vertical, 10.0)
+                        .accessibilityHint("Click Here")
                 }.navigationBarBackButtonHidden(true)
+                
+                //                Button {
+                //                    showPicker.toggle()
+                //
+                //                    showPickerFirstView.toggle()
+                //                } label: {
+                //                    Text(LocalizedStringKey("H1"))
+                //                   //نغير الجمله وكمان ااضيفها لملف اللغات
+                //                }
+                //            }
+                //            .imageColorPicker(showPicker: $showPicker, showPickerFirstView: $showPickerFirstView, color: $selectedColor)
+                //        }
                 
                 //            Button(action:{
                 //                changeProfileImage = true
@@ -67,6 +83,7 @@ struct MainPage: View {
         }
     }
 }
+
 struct MainPage_Previews: PreviewProvider {
     static var previews: some View {
         MainPage()

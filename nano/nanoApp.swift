@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-@main
+ @main
 struct nanoApp: App {
     let persistenceController = PersistenceController.shared
 

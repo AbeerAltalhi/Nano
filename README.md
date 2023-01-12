@@ -40,12 +40,15 @@ ___
 https://drive.google.com/drive/folders/14DuB8ffQglPM454OWdJ6z-mfhA8TtB6q
 
 * Normal Demo:
-[RPReplay_Final1673514554.MOV.zip](https://github.com/AbeerAltalhi/Nano/files/10400009/RPReplay_Final1673514554.MOV.zip)
 
 
 
+
+https://user-images.githubusercontent.com/86341464/212029371-7227ba08-8312-46a6-8116-2d6aba25ab15.mov
 
 
 
 # Challenge Summary:
 
+
+<img width="1041" alt="image" src="https://user-images.githubusercontent.com/86341464/212031130-1ae367ff-6185-4527-800a-5d578c3fb0c3.png">
